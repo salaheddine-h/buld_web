@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sthroma - Movies & Sports Streaming</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/search.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Sthroma</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="match.html">Live Sports</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search movies, shows, sports...">
+                <button id="search-button">Search</button>
+                <div id="search-results" class="search-results-dropdown"></div>
+            </div>
+            <div class="user-menu">
+                <a href="#" class="user-icon">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unlimited Movies & Live Sports</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <button class="btn-primary">Start Watching</button>
+        </div>
+    </section>
+
+    <section class="featured-content">
+        <div class="container">
+            <h2>Featured Movies</h2>
+            <div class="content-slider">
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="/api/placeholder/250/375" alt="Movie poster">
+                        <div class="overlay">
+                            <a href="movie.html" class="btn-play">Watch Now</a>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>The Last Journey</h3>
+                        <div class="meta">
+                            <span class="rating">8.5</span>
+                            <span class="year">2024</span>
+                            <span class="duration">2h 15m</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="/api/placeholder/250/375" alt="Movie poster">
+                        <div class="overlay">
+                            <a href="movie.html" class="btn-play">Watch Now</a>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Dark Waters</h3>
+                        <div class="meta">
+                            <span class="rating">7.9</span>
+                            <span class="year">2024</span>
+                            <span class="duration">1h 55m</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="/api/placeholder/250/375" alt="Movie poster">
+                        <div class="overlay">
+                            <a href="movie.html" class="btn-play">Watch Now</a>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Cosmic Dreams</h3>
+                        <div class="meta">
+                            <span class="rating">9.0</span>
+                            <span class="year">2023</span>
+                            <span class="duration">2h 30m</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="/api/placeholder/250/375" alt="Movie poster">
+                        <div class="overlay">
+                            <a href="movie.html" class="btn-play">Watch Now</a>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Lost City</h3>
+                        <div class="meta">
+                            <span class="rating">8.2</span>
+                            <span class="year">2024</span>
+                            <span class="duration">2h 05m</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="live-sports">
+        <div class="container">
+            <h2>Live Sports Events</h2>
+            <div class="content-slider">
+                <div class="match-card">
+                    <div class="match-poster">
+                        <img src="/api/placeholder/300/200" alt="Match poster">
+                        <div class="live-badge">LIVE</div>
+                        <div class="overlay">
+                            <a href="match.html" class="btn-play">Watch Now</a>
+                        </div>
+                    </div>
+                    <div class="match-info">
+                        <h3>Champions League: Barcelona vs Bayern</h3>
+                        <div class="meta">
+                            <span class="sport">Soccer</span>
+                            <span class="time">Live Now</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="match-card">
+                    <div class="match-poster">
+                        <img src="/api/placeholder/300/200" alt="Match poster">
+                        <div class="overlay">
+                            <a href="match.html" class="btn-play">Watch Now</a>
+                        </div>
+                    </div>
+                    <div class="match-info">
+                        <h3>NBA Finals: Lakers vs Celtics</h3>
+                        <div class="meta">
+                            <span class="sport">Basketball</span>
+                            <span class="time">Today, 8:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="match-card">
+                    <div class="match-poster">
+                        <img src="/api/placeholder/300/200" alt="Match poster">
+                        <div class="overlay">
+                            <a href="match.html" class="btn-play">Watch Now</a>
+                        </div>
+                    </div>
+                    <div class="match-info">
+                        <h3>UFC 305: Main Card</h3>
+                        <div class="meta">
+                            <span class="sport">MMA</span>
+                            <span class="time">Tomorrow, 10:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories-preview">
+        <div class="container">
+            <h2>Browse by Category</h2>
+            <div class="categories-grid">
+                <a href="categories.html?cat=action" class="category-tile">
+                    <div class="category-img" style="background-image: url('/api/placeholder/150/150')"></div>
+                    <span>Action</span>
+                </a>
+                <a href="categories.html?cat=comedy" class="category-tile">
+                    <div class="category-img" style="background-image: url('/api/placeholder/150/150')"></div>
+                    <span>Comedy</span>
+                </a>
+                <a href="categories.html?cat=drama" class="category-tile">
+                    <div class="category-img" style="background-image: url('/api/placeholder/150/150')"></div>
+                    <span>Drama</span>
+                </a>
+                <a href="categories.html?cat=scifi" class="category-tile">
+                    <div class="category-img" style="background-image: url('/api/placeholder/150/150')"></div>
+                    <span>Sci-Fi</span>
+                </a>
+                <a href="categories.html?cat=horror" class="category-tile">
+                    <div class="category-img" style="background-image: url('/api/placeholder/150/150')"></div>
+                    <span>Horror</span>
+                </a>
+                <a href="categories.html?cat=football" class="category-tile">
+                    <div class="category-img" style="background-image: url('/api/placeholder/150/150')"></div>
+                    <span>Football</span>
+                </a>
+                <a href="categories.html?cat=basketball" class="category-tile">
+                    <div class="category-img" style="background-image: url('/api/placeholder/150/150')"></div>
+                    <span>Basketball</span>
+                </a>
+                <a href="categories.html?cat=tennis" class="category-tile">
+                    <div class="category-img" style="background-image: url('/api/placeholder/150/150')"></div>
+                    <span>Tennis</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-logo">
+                <a href="index.html">Sthroma</a>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sthroma. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

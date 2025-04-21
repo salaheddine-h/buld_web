@@ -1,0 +1,74 @@
+frontend/
+│
+├── index.html                --> Home page
+├── movie.html                --> Single movie page
+├── match.html                --> Match livestream page
+├── categories.html           --> Category listing
+├── assets/
+│   ├── css/
+│   │   └── style.css         --> Main stylesheet
+│   └── js/
+│       ├── main.js           --> General JS logic
+│       └── search.js         --> Search bar functionality
+└── components/
+    ├── header.html           --> Navbar component
+    ├── footer.html           --> Footer component
+    └── player.html           --> Reusable video player
+
+
+-------------------------------------------------------------------------------------------------------
+backend/
+│
+├── src/
+│   ├── config/
+│   │   ├── db.js                 # Database connection setup
+│   │   ├── config.js             # Environment variables and app config
+│   │   └── corsOptions.js        # CORS configuration
+│   │
+│   ├── controllers/
+│   │   ├── authController.js     # User authentication logic
+│   │   ├── movieController.js    # Movie management endpoints
+│   │   ├── matchController.js    # Sports match management endpoints
+│   │   ├── categoryController.js # Category management
+│   │   ├── searchController.js   # Search functionality
+│   │   └── streamController.js   # Streaming functionality
+│   │
+│   ├── middleware/
+│   │   ├── authMiddleware.js     # Authentication verification
+│   │   ├── errorMiddleware.js    # Error handling
+│   │   ├── uploadMiddleware.js   # File upload handling
+│   │   └── rateLimiter.js        # API rate limiting
+│   │
+│   ├── models/
+│   │   ├── User.js               # User data model
+│   │   ├── Movie.js              # Movie data model // Done
+│   │   ├── Match.js              # Sports match data model //DOne
+│   │   ├── Category.js           # Category data model
+│   │   └── Stream.js             # Stream metadata model
+│   │
+│   ├── routes/
+│   │   ├── authRoutes.js         # Authentication routes
+│   │   ├── movieRoutes.js        # Movie-related routes
+│   │   ├── matchRoutes.js        # Sports match routes
+│   │   ├── categoryRoutes.js     # Category routes
+│   │   ├── searchRoutes.js       # Search routes
+│   │   └── streamRoutes.js       # Streaming routes
+│   │
+│   ├── services/
+│   │   ├── streamService.js      # Media streaming service
+│   │   ├── authService.js        # Authentication service
+│   │   ├── mediaService.js       # Media processing service
+│   │   └── searchService.js      # Search indexing service
+│   │
+│   ├── utils/
+│   │   ├── validators.js         # Input validation helpers
+│   │   ├── asyncHandler.js       # Async error handler
+│   │   └── logger.js             # Logging utility
+│   │
+│   └── app.js                    # Express app initialization
+│
+├── .env                          # Environment variables (gitignored)
+├── .env.example                  # Example environment variables
+├── package.json                  # Project dependencies
+├── server.js                     # Main entry point //Done
+└── README.md                     # Backend documentation
